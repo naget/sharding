@@ -1,6 +1,6 @@
 package com.tf.vegout.sharding.dao.mapper;
 
-import com.tf.vegout.sharding.dao.entity.User;
+import com.tf.vegout.sharding.dao.entity.Dynamic;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,15 +15,15 @@ import java.util.List;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
-public class UserMapperTest {
+public class DynamicMapperTest {
     @Autowired
-    private UserMapper userMapper;
+    private DynamicMapper dynamicMapper;
 
     @Test
-    public void testSelect(){
-        log.info("------------selectAll method test--------");
-        List<User> users = userMapper.listA(new HashMap<>());
-        Assert.assertEquals(4,users.size());
-        users.forEach(System.out::println);
+    public void selectTest(){
+        log.info("start to test dynamicMapper [listA]");
+        List<Dynamic> dynamics = dynamicMapper.listA(new HashMap<>());
+        Assert.assertEquals(8,dynamics.size());
+        dynamics.forEach(System.out::println);
     }
 }
