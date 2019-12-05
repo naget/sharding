@@ -19,3 +19,6 @@
 |sharding-jdbc-spring-boot-starter|3.0.0.M1|
 |druid|1.1.20|
 
+
+### sql初始化文件
+resources/sql/dump.sql
