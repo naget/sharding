@@ -4,7 +4,7 @@
 
 ### 本地演示demo
 1. clone项目
-2. 拉取demo对应分支
+2. 拉取对应分支（各个demo与分支对应关系详见文末）
 3. 执行resources/sql/dump.sql，初始化本地mysql数据
 4. 执行测试用例
 
