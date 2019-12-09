@@ -22,3 +22,11 @@
 
 ### sql初始化文件
 resources/sql/dump.sql
+
+### 各个demo与分支对应关系
+|分支|demo|
+|--|--|
+|master|单库单表操作|
+|version2|使用mybatis插件实现分表|
+|versinn3|使用sharding-jdbc实现分表|
+|version4|使用shardingsphere实现分表|
